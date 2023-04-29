@@ -1,0 +1,57 @@
+@media screen and(max-width: 1023px) {
+  .front_card,
+  .front_card img,
+  .back_card,
+  .back_card img {
+    width: 300px;
+  }
+
+  .card_container .card_logo {
+    width: 50px;
+  }
+
+  #number {
+    font-size: 1.1rem;
+  }
+  #cvc {
+    top: 42%;
+    right: 12%;
+  }
+}
+
+@media screen and(max-width: 780px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .front_card,
+  .front_card img,
+  .back_card,
+  .back_card img {
+    width: 280px;
+  }
+
+  .left_section {
+    width: 100%;
+    min-height: 38vh;
+    background-image: url(images/bg-main-mobile.png);
+  }
+
+  .cards {
+    flex-direction: column-reverse;
+    left: 61%;
+    top: 60%;
+    gap: 0;
+  }
+
+  .back_card {
+    transform: translateY(70px);
+  }
+  .front_card {
+    z-index: 99;
+  }
+
+  .right_section {
+    margin-top: 6rem;
+  }
+}
